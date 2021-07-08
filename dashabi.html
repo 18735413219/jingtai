@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload = function () {
+        var str = ["刘", "瑾", "钰", "，", "大", "傻","逼","!"," "];
+        setInterval(() => {
+            var str2 = "";
+            str.push(str.shift());
+            str.toString();
+            for (i = 0; i < str.length; i++) {
+                str2 += str[i];
+            }
+            document.getElementById("div").innerHTML = str2;
+        }, 500);
+    }
+</script>
+<style>
+    #div{
+        font-size: 150px;
+        background-color: yellow;
+        margin-top: 300px;
+    }
+</style>
+<body>
+<div id="div" align="center" style="color: #6699f4";></div>
+</body>
+</html>
